@@ -1,4 +1,4 @@
-#Kalkulator standardowy:
+# Kalkulator standardowy:
 
 def kalk_standardowy():
 
