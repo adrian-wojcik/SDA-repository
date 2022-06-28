@@ -21,28 +21,31 @@ def kalk_standardowy():
 
     exit(print("Miłego dnia :)"))
     
-    
-# Kalkulator BMI
 
+# Kalkulator BMI:
 def kalkulator_BMI():
 
+    while True:
         a = int(input("Wprowadź swoją wagę (w kilogramach): \n"))
         b = int(input("Wprowadź swój wzrost (w CENTYMETRACH np.: 180): \n"))
         b = b / 100
-        b = b ** 2
-        while a > 0 and b > 0:
-            if a > 0 and b > 0:
-                print(f"Twoje BMI wynosi: {round(a / b, 2)}")
-            if a / b <= 18.5:
+        x = b ** 2
+
+        if a > 0 and b > 0:
+            print(f"Twoje BMI wynosi: {round(a / b, 2)}")
+            if a / x > 0 and a / x <= 18.5:
                 print("Masz niedowagę")
-            elif a / b >= 18.5 and a / b <= 24.9:
+            elif a / x >= 18.5 and a / x <= 24.9:
                 print("Masz optymalną wagę")
-            elif a / b >= 25 and a / b <= 29.9:
+            elif a / x >= 25 and a / x <= 29.9:
                 print("Masz nadwagę")
-            elif a / b >= 30 and a / b <= 34.9:
+            elif a / x >= 30 and a / x <= 34.9:
                 print("Jesteś otyły")
-            elif a / b >= 35:
-                print("Zacznij Biegać!!!")
+            elif a / x >= 35:
+                print("Masz poważną nadwagę")
             else:
-                continue
-        breakpoint(print(f"Wprowadzone parametry są nieprawidłowe!"))
+                break
+        else:
+            print("Wprowadzone dane są nieprawidłowe")
+            continue
+    exit()
