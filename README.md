@@ -1,4 +1,4 @@
-# Kalkulator standardowy:
+# Standard Calculator:
 
 def kalk_standardowy():
 
@@ -20,6 +20,61 @@ def kalk_standardowy():
         print(f"Znak {b} nie jest obługiwany")
 
     exit(print("Miłego dnia :)"))
+    
+# Standard Calculator2:
+
+def funki_sum(x, b, y):
+    if b == "+":
+        print(x + y)
+    else:
+        pass
+
+def funki_subtraction(x, b, y):
+    if b == "-":
+        print(x - y)
+    else:
+        pass
+
+def funki_multiply(x, b, y):
+    if b == "*":
+        print(x * y)
+    else:
+        pass
+
+def funki_divided(x, b, y):
+    if b == "/":
+        print(x / y)
+    else:
+        pass
+
+def funki_modulo(x, b, y):
+    if b == "%":
+        print(x % y)
+    else:
+        pass
+
+def funki_kalkulator():
+
+
+    x = float(input("Wprowadź pierwszą liczbę \n"))
+    b = input("Wprowadź znak wykonywanej operacji \n")
+    y = float(input("Wprowadź drugą liczbę \n"))
+
+    if b == "+" or "-" or "*" or "/" or "%":
+        if b == "+":
+            return funki_sum(x, b, y), print("Miłego dnia! :D \n")
+        elif b == "-":
+            return funki_subtraction(x, b, y), print("Miłego dnia! :D \n")
+        elif b == "*":
+            return funki_multiply(x, b, y), print("Miłego dnia! :D \n")
+        elif b == "/":
+            return funki_divided(x, b, y), print("Miłego dnia! :D \n")
+        elif b == "%":
+            return funki_modulo(x, b, y), print("Miłego dnia! :D \n")
+        else:
+            print("Nieznana funkcja - dostępne funkcje to: '+' '-' '*' '/' '%'")
+    print("Miłego dnia! :D")
+
     
 
 # Kalkulator BMI:
