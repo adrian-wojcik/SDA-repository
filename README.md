@@ -21,39 +21,39 @@ def kalk_standardowy():
 
     exit(print("Miłego dnia :)"))
     
-# Standard Calculator2:
+# Standard Calculator_2:
 
-def funki_sum(x, b, y):
+    def funki_sum(x, b, y):
     if b == "+":
         print(x + y)
     else:
         pass
 
-def funki_subtraction(x, b, y):
+    def funki_subtraction(x, b, y):
     if b == "-":
         print(x - y)
     else:
         pass
 
-def funki_multiply(x, b, y):
+    def funki_multiply(x, b, y):
     if b == "*":
         print(x * y)
     else:
         pass
 
-def funki_divided(x, b, y):
+    def funki_divided(x, b, y):
     if b == "/":
         print(x / y)
     else:
         pass
 
-def funki_modulo(x, b, y):
+    def funki_modulo(x, b, y):
     if b == "%":
         print(x % y)
     else:
         pass
 
-def funki_kalkulator():
+    def funki_kalkulator():
 
 
     x = float(input("Wprowadź pierwszą liczbę \n"))
@@ -78,7 +78,8 @@ def funki_kalkulator():
     
 
 # Kalkulator BMI:
-def kalkulator_BMI():
+    
+    def kalkulator_BMI():
 
     while True:
         a = int(input("Wprowadź swoją wagę (w kilogramach): \n"))
