@@ -108,7 +108,7 @@ def kalk_standardowy():
 
 
 
-#Write a program that will display all natural numbers between 0 and 50.
+# Write a program that will display all natural numbers between 0 and 50.
 
     def funk_1():
         for item in range(0, 50):
@@ -116,7 +116,7 @@ def kalk_standardowy():
         else:
              pass
 
-#Write a program that will display all even numbers between 0, 100.
+# Write a program that will display all even numbers between 0, 100.
 
     def funk_2():
         for item in range(0, 100):
