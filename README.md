@@ -77,7 +77,7 @@ def kalk_standardowy():
 
     
 
-# Kalkulator BMI:
+# Calculator BMI:
     
     def kalkulator_BMI():
 
