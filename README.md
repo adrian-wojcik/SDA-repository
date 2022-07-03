@@ -162,10 +162,10 @@ def funk_3():
     for item in range(-20, 21):
         if item%3 == 0:
             print(item)
+            
     # Sum of all numbers
-    for item in range(-20, 21):
-        x = sum(range(-20, 21))
-        print(x)
+    x = sum(range(-20, 21))
+    print(x)
 
     # All the numbers and their powers
     for item in range(-20, 21):
