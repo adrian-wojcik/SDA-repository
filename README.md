@@ -108,7 +108,7 @@ def kalk_standardowy():
 
 
 
-# Napisz program, który wyświetli wszystkie liczby naturalne z przedziału 0, 50.
+#Write a program that will display all natural numbers between 0 and 50.
 
     def funk_1():
         for item in range(0, 50):
@@ -116,7 +116,7 @@ def kalk_standardowy():
         else:
              pass
 
-# Napisz program, który wyświetli wszystkie liczby parzyste z przedziału 0, 100.
+#Write a program that will display all even numbers between 0, 100.
 
     def funk_2():
         for item in range(0, 100):
@@ -124,24 +124,59 @@ def kalk_standardowy():
                 print(item)
             else:
                 pass
-            
-# Napisz program, który wyświetli na ekranie kwadraty wszystkich liczb całkowitych z przedziału 0, 10.
+# Write a program that will display on the screen the squares of all integers in the range 0, 10.
+def funk_3():
 
-    def funk_3():
-        for item in range(0, 10):
-             print(item**2)
-        else:
-            pass
+    for item in range(0, 10):
+         print(item**2)
+    else:
+        pass
 
-# Korzystając z pętli, wypisz liczby od -20 do 20. Następnie wypisz:
+# Using a loop, write numbers from -20 to 20. Then write:
 
-def funk_4():
+    def funk_4():
 
-    range_1 = range(-20, 21)
-    for item in range_1:
-         print(item)
+    #The first 6 numbers
+    for item in range(-20, 21)[0:6]:
+        print(item)
 
-# Napisz program, który wyświetli liczby będące wielokrotnością 5 i podzielne przez 7 z przedziału 1500-2700.
+    #The last 6 numbers
+    for item in range(-20, 21)[35:41]:
+        print(item)
+
+    # All even numbers
+    for item in range(-20, 21):
+        if item%2 == 0:
+            print(item)
+
+    # All numbers except 5
+    for item in range(-20, 21):
+        if item != 5:
+            print(item)
+
+    # All numbers up to and including 7
+    for item in range(-20, 21)[0:28]:
+        print(item)
+
+    # All numbers divisible by 3
+    for item in range(-20, 21):
+        if item%3 == 0:
+            print(item)
+    # Sum of all numbers
+    for item in range(-20, 21):
+        x = sum(range(-20, 21))
+        print(x)
+
+    # All the numbers and their powers
+    for item in range(-20, 21):
+        print(item,">>potęga>>" ,item*item)
+
+    # All numbers and their values modulo 10
+    for item in range(-20, 21):
+        print(item, ">>modulo 10>>", item%10)
+
+
+# Write a program that will display numbers that are multiples of 5 and divisible by 7 between 1500-2700.
 
     def funk_5():
         for item in range(1500, 2700):
@@ -150,7 +185,8 @@ def funk_4():
             else:
                 pass
 
-# Napisz program, który wypisze na ekranie liczby od 0 do 6 z pominięciem 3 i 6. Zrób to w dwóch wersjach: z użyciem instrukcji continue i bez tej instrukcji.
+# Write a program that prints the numbers 0 through 6 to the screen, skipping 3 and 6.
+# Do this in two versions: with the continue statement and without the continue statement.
 
     def funk_6():
         for item in range(0,7):
@@ -159,8 +195,7 @@ def funk_4():
             else:
                 pass
 
-# with continue option
-
+    # Z opcja continue
     while True:
          for item in range(0,7):
             if item == 3 or item == 6:
