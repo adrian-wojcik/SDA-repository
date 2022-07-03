@@ -105,3 +105,66 @@ def kalk_standardowy():
             print("Wprowadzone dane są nieprawidłowe")
             continue
     exit()
+
+
+
+# Napisz program, który wyświetli wszystkie liczby naturalne z przedziału 0, 50.
+
+    def funk_1():
+        for item in range(0, 50):
+            print(item)
+        else:
+             pass
+
+# Napisz program, który wyświetli wszystkie liczby parzyste z przedziału 0, 100.
+
+    def funk_2():
+        for item in range(0, 100):
+            if item%2 == 0:
+                print(item)
+            else:
+                pass
+            
+# Napisz program, który wyświetli na ekranie kwadraty wszystkich liczb całkowitych z przedziału 0, 10.
+
+    def funk_3():
+        for item in range(0, 10):
+             print(item**2)
+        else:
+            pass
+
+# Korzystając z pętli, wypisz liczby od -20 do 20. Następnie wypisz:
+
+def funk_4():
+
+    range_1 = range(-20, 21)
+    for item in range_1:
+         print(item)
+
+# Napisz program, który wyświetli liczby będące wielokrotnością 5 i podzielne przez 7 z przedziału 1500-2700.
+
+    def funk_5():
+        for item in range(1500, 2700):
+            if item%5 == 0 and item%7 ==0:
+                print(item)
+            else:
+                pass
+
+# Napisz program, który wypisze na ekranie liczby od 0 do 6 z pominięciem 3 i 6. Zrób to w dwóch wersjach: z użyciem instrukcji continue i bez tej instrukcji.
+
+    def funk_6():
+        for item in range(0,7):
+            if item != 3 and item != 6:
+                print(item)
+            else:
+                pass
+
+# with continue option
+
+    while True:
+         for item in range(0,7):
+            if item == 3 or item == 6:
+                continue
+            else:
+                print(item)
+         break
