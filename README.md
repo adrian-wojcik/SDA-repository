@@ -204,7 +204,7 @@ def funk_3():
                 print(item)
          break
          
-# Create a gema "MASTERMIND" where player has to guess number from range(0,100) that program randomly choose.
+# Create a game "MASTERMIND" where player has to guess number from range(0,100) that program randomly choose.
 
     import math
     import random
