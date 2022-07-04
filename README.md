@@ -203,3 +203,58 @@ def funk_3():
             else:
                 print(item)
          break
+         
+# Create a gema "MASTERMIND" where player has to guess number from range(0,100) that program randomly choose.
+
+    import math
+    import random
+
+
+    def funk_mastermind():
+
+        z = random.choice(range(0,101))
+
+        while True:
+                x = int(input("Please guess, which number Python randomly choose:\n"))
+                if x in range(0,101):
+                    pass
+                else:
+                    print(f"Please input number in range of (0,100!")
+                    continue
+                if x == z:
+                    print("Congratulation, you guessed correct number!!!")
+                    continue
+                elif x != z and x < z:
+                    print(f"Number {x} is smaller than Python number :) Try again!")
+                    continue
+                elif x != z and x > z:
+                    print(f"Number {x} is bigger than Python number :) Try again!")
+                    continue
+                elif x != 0 and z%2 == 0:
+                    print(f"Number that Python choose is even :) Try again!")
+                    continue
+                elif x != 0 and z%3 == 0:
+                    print(f"Number that Python choose is odd :) Try again!")
+                    continue
+                elif x != 0 and x**2 == z:
+                    print(f"Number that Python choose is square root of number {x} :) Try again!")
+                    continue
+                elif x != 0 and z > 40 or z < 60 and x < 40 or x > 60:
+                    print(f"Number that Python choose is in range (40,60) :) Try again!")
+                    continue
+                elif x != 0 and math.log(x,z) == 3:
+                    print(f"Number {x} to the cubic root, will give you number that Python choose :) Try again!")
+                    continue
+                elif x != 0 and math.cos(x) == z:
+                    print(f"Number that Python choose is equal to cosine of {x} :) Try again!")
+                    continue
+                elif x != 0 and x > 10 and z in range(0,11):
+                    print(f"Number that Python choose is integer :) Try again!")
+                    continue
+                elif x !=0 and z%10 == 0 and z !=0:
+                    print(f"Number that Python choose is a multiple of ten :) Try again!")
+                    continue
+                else:
+                    print(f"Sorry, number {x} is not what you looking for :) Try again")
+                    continue
+        exit(print("Game is over"))
